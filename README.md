@@ -9,4 +9,5 @@ A python package to calculate quadratic function with pyqt5 GUI.
 <br> If you don't have PyQt5 module, install it by:
 <br>
 <br> `pip install --user PyQt5`
-<br> ![screenshot 1](/hw1/screenshot1.png)
+<br>
+<br> ![screenshot 2](/hw1/screenshot2.png)

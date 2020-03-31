@@ -6,3 +6,4 @@ quadratic_equation_sopham.egg-info/PKG-INFO
 quadratic_equation_sopham.egg-info/SOURCES.txt
 quadratic_equation_sopham.egg-info/dependency_links.txt
 quadratic_equation_sopham.egg-info/top_level.txt
+scripts/quadratic

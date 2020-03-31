@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="quadratic_equation_sopham", # Replace with your own username
-    version="1.5.0",
+    version="1.9.0",
     author="sopham",
     author_email="sopham@ttu.ee",
     description="python hw1",
@@ -19,4 +19,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
+    scripts=['scripts/quadratic']
 )

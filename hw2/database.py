@@ -43,7 +43,7 @@ providers = [Provider(id=1, ProviderName="Rahva Toit"),
 			Provider(id=4, ProviderName="BitStop Kohvik OU")
 			]
 			
-engine = db.create_engine('sqlite:///./diners.db', echo=True)
+engine = db.create_engine('sqlite:///./diners.db', echo=False)
 Base.metadata.create_all(engine)
 
 if __name__ == "__main__":
@@ -59,12 +59,18 @@ if __name__ == "__main__":
 	session.commit()
 	
 	#canteens which are open 16.15-18.00
+	print("Canteens open from 16.15 to 18.00:")
 	for row in session.query(Canteen).filter(Canteen.time_open <= dt.time(16,15)).filter(Canteen.time_closed >= dt.time(18)).all():
 		print(row.Name)
+	
 	#canteens which are serviced by Rahva Toit
-	for row in session.query(Canteen).filter(Provider.ProviderName=="Rahva Toit").all():
+	print("Canteens serviced by Rahva Toit:")
+	for row in session.query(Canteen).join(Provider).filter(Provider.ProviderName=="Rahva Toit").all():
 		print(row.Name)
 	
 	#delete data
 	Canteen.__table__.drop(engine)
 	Provider.__table__.drop(engine)
+	
+	#close database
+	session.close()

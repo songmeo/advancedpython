@@ -18,3 +18,4 @@ The task is to draw direct flights from Tallinn using cartopy, matplotlib.
 
 ## Homework 4
 Scrape all products from osta.ee using beautifulsoup
+<br> ![screenshot](/hw4/hw4.png)

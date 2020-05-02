@@ -15,3 +15,6 @@ A python package to calculate quadratic function with pyqt5 GUI.
 ## Homework 3
 The task is to draw direct flights from Tallinn using cartopy, matplotlib.
 <br> ![screenshot](/hw3/hw3.png)
+
+## Homework 4
+Scrape all products from osta.ee using beautifulsoup
